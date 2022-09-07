@@ -1,0 +1,36 @@
+static public string plus(int a, int b, int c, int d)
+        {
+            string Z;
+            Z = (a + c) + " + " + (b + d) + "i";
+            return Z;
+
+        }
+        static public string minus(int a, int b, int c, int d)
+        {
+            string Z;
+            Z = (a - c) + " + " + (b - d) + "i";
+            return Z;
+
+        }
+        static public string multiplication(int a, int b, int c, int d)
+        {
+            string Z;
+            Z = (a*c-d*b) + " + " + (b*c+a*d) + "i";
+            return Z;
+
+        }
+        static public string division(int a, int b, int c, int d)
+        {
+            string Z;
+            Z = ((a * c + d * b)/(c*c+d*d)) + " + " + ((b * c - a * d)/ (c * c + d * d)) + "i";
+            return Z;
+
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine(plus(1, 2, 3, 4));
+            Console.WriteLine(minus(1, 2, 3, 4));
+            Console.WriteLine(multiplication(1, 2, 3, 4));
+            Console.WriteLine(division(1, 2, 3, 4));
+            Console.ReadKey();
+        }
